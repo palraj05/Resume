@@ -1,38 +1,103 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.justify {
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items:center ;
+min-height: 10vh;
+background-color: rgb(47, 218, 230);
+color: white;
+
+}
+
+
+
+.nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  list-style-type: none;
+}
+
+.sideBar {
+  position: absolute;
+  top: 60px;
+  left: -15vw;
+  height: 100%;
+  width: 15vw;
+  transition: left 0.3s ease-in-out;
+
+}
+.sidebar-toggle {
+  position: absolute;
+  top: 20%;
+  right: -60px;
+  height: 60px;
+  width: 60px;
+  z-index: 1;
+}
+.content {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  transition: left 0.3s ease-in-out;
+  background-color: lightgray;
+}
+.sidebar.open {
+  left: 0;
+}
+.content.open {
+  left: 15vw;
+}
+
+.pics {
+ align-content: center;
+
+  padding: 15px;
+
+  min-width: 100px;
+}
+
+.logo {
+  color: blue;
+  width: 50%;
+  height: auto;
+  padding-right: 20px;
+}
+
+.about {
+  font-family: 'Sevillana', cursive;
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+p {
+  font-family: 'Changa', sans-serif;
+  font-size: large;
+}
+
+.top {
+  justify-content:center ;
+  text-align:center;
+   height:30rem;
+   width:75rem;
+    position: absolute;
+     left: 50%;
+      top: 50%;
+     transform: translate(-50%, -50%);
 }
