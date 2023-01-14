@@ -1,0 +1,2 @@
+1. Side menu
+2. Banner image with click and scroll

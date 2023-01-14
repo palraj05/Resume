@@ -4,6 +4,9 @@ import { NavLink } from "react-router-dom";
 import "./App.css";
 import { useNavigate  } from "react-router-dom";
 import Logo from "./Logo";
+// import PersistentDrawerLeft from "./DrawerToggle";
+import DensityMediumIcon from '@mui/icons-material/DensityMedium';
+
 
 function NavMenu(props) {
 
@@ -19,12 +22,14 @@ function NavMenu(props) {
   const homePage= () => {
     navigate('/');
 };
-
+ 
   return (
     <div className="navs">
-    
+    {/* <PersistentDrawerLeft /> */}
       <nav style={{flex:".2`", display:"flex"}}>
-
+        <div style={{paddingLeft:"20px"}}>
+<DensityMediumIcon />
+</div>
      <div  
      
      style={{paddingRight:"10px"}}>

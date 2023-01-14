@@ -7,7 +7,8 @@ import Contact from "./Contact";
 import Home from './Home';
 import NavMenu from "./NavMenu";
 import Resume from "./Resume";
-
+import resume from "./resume.pdf";
+import SideBar from './SideBar';
 
 
 function App() {
@@ -25,12 +26,12 @@ function App() {
       
         <NavMenu />
 
-     
-
+     <SideBar />
+    
         <Routes className="justify">
           <Route path="/" element={ <Home/> }/>
           <Route path="/about" element={ <About/> }/>
-          <Route path="/resume" element={ <Resume/> }/>
+          <Route path="/resume" element={ <Resume /> }/>
           <Route path="/contact" element={ <Contact/> }/>
          
         </Routes>

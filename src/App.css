@@ -1,7 +1,13 @@
 .App {
   justify-content: center;
   align-items: center;
+
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
+
 
 .justify {
   justify-content: center;
@@ -30,44 +36,11 @@ color: white;
   list-style-type: none;
 }
 
-.sideBar {
-  position: absolute;
-  top: 60px;
-  left: -15vw;
-  height: 100%;
-  width: 15vw;
-  transition: left 0.3s ease-in-out;
 
-}
-.sidebar-toggle {
-  position: absolute;
-  top: 20%;
-  right: -60px;
-  height: 60px;
-  width: 60px;
-  z-index: 1;
-}
-.content {
-  position: absolute;
-  top: 60px;
-  left: 0;
-  right: 0;
-  height: 100%;
-  transition: left 0.3s ease-in-out;
-  background-color: lightgray;
-}
-.sidebar.open {
-  left: 0;
-}
-.content.open {
-  left: 15vw;
-}
 
 .pics {
  align-content: center;
-
   padding: 15px;
-
   min-width: 100px;
 }
 
@@ -78,26 +51,23 @@ color: white;
   padding-right: 20px;
 }
 
-.about {
-  font-family: 'Sevillana', cursive;
-}
+
 
 h1 {
   font-family: 'Abril Fatface', cursive;
+  padding: 0;
+  margin: 0;
 }
 
 p {
+
   font-family: 'Changa', sans-serif;
   font-size: large;
 }
 
-.top {
-  justify-content:center ;
-  text-align:center;
-   height:30rem;
-   width:75rem;
-    position: absolute;
-     left: 50%;
-      top: 50%;
-     transform: translate(-50%, -50%);
+
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  background-color: aqua;
 }

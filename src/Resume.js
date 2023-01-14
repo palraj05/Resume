@@ -1,33 +1,50 @@
-import React, { useState } from 'react'
-import { Document, Page } from 'react-pdf';
-// import { Router } from 'react-router-dom';
+
+import React, { useState } from 'react';
+import resume from "./resume.pdf"
+import { Document, Page, pdfjs } from "react-pdf";
+ 
 
 
-function Resume() {
-    
 
-    const [viewList, setViewList] = useState(false);
+function Resume (){
+ 
 
-    const [numPages, setNumPages] = useState(null);
-    const [pageNumber, setPageNumber] = useState(1);
 
-    function onDocumentLoadSuccess({ numPages }) {
-      setNumPages(numPages);
-    }
+  
 
-    
+
+  
 
   return (
-    <div className='top'>
-      
-        <h1>Resume</h1>
-     
-        <Document file="Resume-Palraj" onLoadSuccess={onDocumentLoadSuccess}>
-        <Page pageNumber={pageNumber} />
+<div className="top">
+  <h1>Resume</h1>
+{/* 
+	<center>
+<Document
+        file="http://www.pdf995.com/samples/pdf.pdf"
+		onLoadError={console.error}
+        onLoadSuccess={onDocumentLoadSuccess}>
+			
+			{Array.from (new Array(numPages), (el,index) => (
+				 <Page 
+				 key={`page_${index+1}`} 
+				 pageNumber={index+1}
+				 />
+			))}
+       
       </Document>
+	  </center>
+	   */}
 
-        </div>
-  )
-}
+
+<a href={resume}> <p>Link to My Resume</p></a>
+
+
+
+</div>
+   
+  );
+};
+
 
 export default Resume

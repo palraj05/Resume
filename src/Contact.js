@@ -1,12 +1,5 @@
 import React, { useState } from 'react'
-// import { Router } from 'react-router-dom';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    
-  } from "react-router-dom";
-import { Link } from "react-router-dom";
+
 
 function Contact() {
     
@@ -15,10 +8,16 @@ function Contact() {
 
 
   return (
+    
     <div className='top'>
        
         <h1>Contact</h1>
-     
+        <p> Mobile: 9894759374</p>
+        <p>Email: palraz0512@gmail.com</p>
+        <p>LinkedIn: linkedin.com/in/palrajgp</p>
+       
+
+
       
         </div>
   )

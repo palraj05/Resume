@@ -1,20 +1,31 @@
-import React from "react";
+import React from 'react'
+import { SidebarData } from './SidebarData'
 
-function SideBar(props) {
 
-  const sidebarClass = props.isOpen ? "sidebar open" : "sidebar";
-console.log("sidebar");
+ function SideBar() {
+  console.log(SideBar,"link");
   return (
-    <div className={sidebarClass}>
+    <div className='sidebar'>
+      <ul>
+        
+       {SidebarData.map((val, key) => {
+        console.log("val", val);
+        return (
+<li 
+key={key}
+onClick={() =>
+{window.location.pathname = val.link}}>
 
-<div> I slide into view </div>
-      <div> Me Too! </div>
-      <div> Me Three! </div>      
-      <button onClick={props.toggleSidebar} className="sidebar-toggle">
-        Toggle Sidebar
-      </button>
+  <div>{val.icon}</div>
+  <div>{val.title}</div>
+
+</li>
+
+        )
+       }) }
+       </ul>
     </div>
-  );
+  )
 }
 
-export default SideBar;
+export default SideBar
